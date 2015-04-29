@@ -4,28 +4,34 @@
 //
 //////////////////////////////////////////
 
-var generateFortuneCookie = function() {
+
     // This is where your code for the Fortune Cookie generator goes.
     // You will use the fortunesList variable defined lower in this file
     // to supply your fortune cookies with text.
 
     // TODO: Grab the paragraph with the ID
     // `fortune-cookie-text` to be able to insert text into that element.
-    function generateFortuneCookie() {
-    document.getElementById("fortune-cookie-text").innerHTML = "blah blah blah";
-}
+    var fortune-cookie-text = document.getElementById("fortune-cookie-text");
+
 
     // TODO: Update the Previous Fortunes list with the current `innerText`
     // value of `#fortune-cookie-text`. Follow these steps:
         // 1. Create a new `li` element with the `document.createElement()` method.
+        var myNewElement = document.createElement("li");
         // 2. Set the `innerText` of that element equal to the `innerText` of
         //    the `#fortune-cookie-text` element.
+       var myText = document.createTextNode();
         // 3. Select the `#previous-fortune-cookies` container and use
         //    `appendChild()` to append the new `li` element you created above.
+        myNewElement.appendChild(myText);
         // 4. You should see the previous fortune cookie saying show up in the list.
+        
 
     // TODO: Select a new (random) fortune cookie saying from the data stored in the
     // `fortunesList` variable. (HINT: You will use `Math.floor()` and
+
+    function myFunction() {
+    document.getElementById("fortune-cookie-text").innerHTML = Math.floor(fortunelist);
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
 
